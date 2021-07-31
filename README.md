@@ -1,6 +1,10 @@
 # _*Learn to Redux*_
 
-Ship Identification Project를 넘겨받고 결코 작지 않은 이 소스들을 감당하면서 Global한 State 관리의 필요성을 뼈저리게 느끼게 되었다. 이전부터 Redux를 공부하자고 다짐했지만 미루고 미루면서 이제야 시작하게 되었다.
+Ship Identification Project를 넘겨받고 결코 작지 않은 이 소스들을 감당하면서 
+
+Global한 State 관리의 필요성을 뼈저리게 느끼게 되었다.
+
+이전부터 Redux를 공부하자고 다짐했지만 미루고 미루면서 이제야 시작하게 되었다.
 
 Redux를 정리해보자
 
@@ -8,7 +12,7 @@ Redux를 정리해보자
 
 ## _Concept_
 
-React에서 State 관리를 하다보면 한 Component 내에서 상태관리를 주로 하게 된다.
+React에서 State 관리를 하다보면 한 ```Component``` 내에서 상태관리를 주로 하게 된다.
 
 그러나 Redux를 사용하게 되면 Component 외부에서 State 관리를 하기 때문에
 
@@ -20,7 +24,9 @@ Action의 객체를 참조하여 변화를 일으킨다.
 
 Store가 Action을 받게 되면 Reducer가 State를 어떻게 변화시킬지 결정한다.
 
-Action을 처리하게 되면 새로운 State가 Store에 저장이 되고, Store를 참조하고 있는 컴포넌트에 변화된 State값을 즉시 전달한다. 
+Action을 처리하게 되면 새로운 State가 Store에 저장이 되고, Store를 참조하고 있는 컴포넌트에 변화된 
+
+State값을 즉시 전달한다. 
 
 <br>
 
@@ -108,7 +114,7 @@ Store에는 모든 State값이 내장되어 있다.
 
 ## _Dispatch_
 
-Action을 Store에 전달하게 하는 행위이다.
+Action을 Store에 전달하게 하는 행위(?) 매개체? 이다.
 
 <br>
 
@@ -117,5 +123,3 @@ Action을 Store에 전달하게 하는 행위이다.
 Component에서 특정 State값이 필요하면 Store를 Subscribe한다.
 
 즉, Store의 State값이 변경되면 특정 함수를 실행시킨다.
-
-
