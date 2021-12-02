@@ -1,16 +1,10 @@
 # _*Learn to Redux*_
 
-Ship Identification Project를 넘겨받고 결코 작지 않은 이 소스들을 감당하면서 
-
-Global한 State 관리의 필요성을 뼈저리게 느끼게 되었다.
-
-이전부터 Redux를 공부하자고 다짐했지만 미루고 미루면서 이제야 시작하게 되었다.
-
-Redux를 정리해보자
-
 <br>
 
 ## _Concept_
+
+<br>
 
 React에서 State 관리를 하다보면 한 ```Component``` 내에서 상태관리를 주로 하게 된다.
 
@@ -31,6 +25,8 @@ State값을 즉시 전달한다.
 <br>
 
 ## _Action_
+
+<br>
 
 특정 State 값에 변화가 필요하다면 Action을 보내야 한다. 
 
@@ -64,6 +60,9 @@ const addViewCount = () => {
 
 
 ## _Reducer_
+
+<br>
+
 
 Reducer는 State 값을 변화시키는 역할이 있고, 변화하는 로직이 들어있다.
 
@@ -108,17 +107,23 @@ Reducer는 현재의 State와 전달 받은 Action을 참고하여 새로운 sta
 
 ## _Store_
 
+<br>
+
 Store에는 모든 State값이 내장되어 있다.
 
 <br>
 
 ## _Dispatch_
 
+<br>
+
 Action을 Store에 전달하게 하는 행위(?) 매개체? 이다.
 
 <br>
 
 ## _Subscribe_
+
+<br>
 
 Component에서 특정 State값이 필요하면 Store를 Subscribe한다.
 
